@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  line-height: 1.0;
+  min-height: 100vh;
+  width:100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  background-color:black;
+  /* background-image:url('https://firebasestorage.googleapis.com/v0/b/event-471a7.appspot.com/o/image%205.png?alt=media&token=a10dfc07-3689-4299-a82b-ac45aff14c94');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+body:before {
+  background-attachment: scroll;
+  content: '';
+  display: block;
+  height: 100vh;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transform: scale(1);
+  width: 100vw;
+  z-index: 0;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/event-471a7.appspot.com/o/download.svg?alt=media&token=7002ca84-8ce2-4bd1-8b35-1f53ebcce57b');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+/* 
+.main-section{
+  width:100%;
+  height:100vh;
+}
+
+.container{
+  width: 100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.poster-one{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+} */

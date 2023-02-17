@@ -1,0 +1,11 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+}
+
+.container{
+    /* text:center; */
+    color:white;
+}
