@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.workshop-main-div{
+    padding-top: 80px;
+    color:white;
+    text-align:center;
+}

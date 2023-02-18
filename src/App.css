@@ -25,7 +25,7 @@ body:before {
   transform: scale(1);
   width: 100vw;
   z-index: 0;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/event-471a7.appspot.com/o/download.svg?alt=media&token=7002ca84-8ce2-4bd1-8b35-1f53ebcce57b');
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/event-471a7.appspot.com/o/download.svg?alt=media&token=7002ca84-8ce2-4bd1-8b35-1f53ebcce57b'); */
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

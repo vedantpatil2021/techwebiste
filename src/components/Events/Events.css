@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.events-main-div{
+    padding-top: 80px;
+    color:white;
+    text-align:center;
+}
