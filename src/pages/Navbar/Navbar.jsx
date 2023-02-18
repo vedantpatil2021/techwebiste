@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { motion } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
@@ -15,45 +16,53 @@ const Navbar = () => {
     >
 
       <div className="navbar">
-      <div className="logo">LOGO</div>
+      <div className="logo"><Link to="/" style={{color:"white","textDecoration":"none"}} >LOGO</Link></div>
       <div className="sub-main1">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.4 }}
         >
-          Home
+          <Link to="/" style={{color:"white","textDecoration":"none"}} >HOME</Link>
         </motion.div>
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.4, delay: 0.4 }}
         >
-          Events
+          <Link to="/events" style={{color:"white","textDecoration":"none"}} >EVENTS</Link>
         </motion.div>
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.6, delay: 0.4 }}
         >
-          Explore
+           <Link to="/workshops" style={{color:"white","textDecoration":"none"}} >WORKSHOPS</Link>
         </motion.div>
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.8, delay: 0.4 }}
         >
-          Contact
+           <Link to="/contact" style={{color:"white","textDecoration":"none"}} >CONTACT US</Link>
+        </motion.div>
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2.0, delay: 0.4 }}
+        >
+           <Link to="/register" style={{color:"white","textDecoration":"none"}} >REGISTRATIONS</Link>
         </motion.div>
       </div>
       </div>
 
       <motion.div
       className={!menu ? "menu" : "no-menu"}>
-        <div onClick={() => setMenu((menu) => !menu)}>Home</div>
-        <div onClick={() => setMenu((menu) => !menu)}>Events</div>
-        <div onClick={() => setMenu((menu) => !menu)}>Explore</div>
-        <div onClick={() => setMenu((menu) => !menu)}>Contacts</div>
+        <div onClick={() => setMenu((menu) => !menu)}><Link to="/" style={{color:"white","textDecoration":"none"}} >HOME</Link></div>
+        <div onClick={() => setMenu((menu) => !menu)}><Link to="/events" style={{color:"white","textDecoration":"none"}} >EVENTS</Link></div>
+        <div onClick={() => setMenu((menu) => !menu)}><Link to="/workshops" style={{color:"white","textDecoration":"none"}} >WORKSHOPS</Link></div>
+        <div onClick={() => setMenu((menu) => !menu)}><Link to="/contact" style={{color:"white","textDecoration":"none"}} >CONTACT US</Link></div>
+        <div onClick={() => setMenu((menu) => !menu)}><Link to="/register" style={{color:"white","textDecoration":"none"}} >REGISTRATIONS</Link></div>
       </motion.div>
       <motion.div
         className="sub-main2"
